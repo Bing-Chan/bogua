@@ -1,0 +1,45 @@
+---
+- hosts: master #执行
+  remote_user: root #以root身份执行
+  vars:
+    workspace: "{{workspace}}"
+    destPath: "{{dest}}"
+    APP_IMAGE_NAME: "{{APP_IMAGE_NAME}}"
+    APP_IMAGE_TAG: "{{APP_IMAGE_TAG}}"
+    bindPort: "{{APP_PORT}}"
+  tasks:
+    - name: 目标机器镜像地址
+      shell: echo {{destPath}}/{{APP_IMAGE_NAME}}/
+    - name: copy 镜像
+      synchronize: src="{{item}}" dest="{{destPath}}/{{APP_IMAGE_NAME}}/"
+      with_fileglob:
+        - "{{workspace}}/{{APP_IMAGE_NAME}}-{{APP_IMAGE_TAG}}.tar"
+    - name: 加载镜像到本地 #标签名
+      command: "docker load --input {{destPath}}/{{APP_IMAGE_NAME}}/{{APP_IMAGE_NAME}}-{{APP_IMAGE_TAG}}.tar"
+    - name: 停止服务
+      docker_container:
+        name: "{{APP_IMAGE_NAME}}"
+        state: absent
+
+    - name: 启动容器 #标签名
+      shell: docker run --restart=always --network=host  --name {{APP_IMAGE_NAME}} -itd {{APP_IMAGE_NAME}}:{{APP_IMAGE_TAG}}
+
+#    - name: 启动服务
+#      docker_container:
+#        name: "{{APP_IMAGE_NAME}}"
+#        image: "{{APP_IMAGE_NAME}}:{{APP_IMAGE_TAG}}"
+#        ports:
+#          - "{{bindPort}}"
+
+#
+#    - name: 统计容器 #统计容器是否存在
+#      shell: docker ps -a | grep "{{APP_IMAGE_NAME}}" |wc -l
+#      register: check_value
+#    - name: 停止原容器 #标签名
+#      command: "docker stop {{APP_IMAGE_NAME}}"
+#      when: check_value.stdout|int > 0
+#    - name: 删除容器 #标签名
+#      command: "docker rm {{APP_IMAGE_NAME}}"
+#      when: check_value.stdout|int > 0
+#    - name: 启动容器 #标签名
+#      shell: docker run -e "JAVA_OPTS={{JAVA_OPTS}}" -p {{bindPort}} -v {{volumes}}  --name {{APP_IMAGE_NAME}} -d {{APP_IMAGE_NAME}}:{{APP_IMAGE_TAG}}

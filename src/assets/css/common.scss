@@ -1,0 +1,342 @@
+@import './variables.scss';
+body {
+	background-image: linear-gradient(160deg, #b100ff 20%,#00b3ff 80%);
+	font-size: 14px;
+}
+ // 公共元素
+.pub-button-space {
+	text-indent: 5px;
+	letter-spacing:5px;
+}
+
+ // 公共表单样式
+.pub-form-mod {
+	margin: 0 16px;
+	padding: 0 16px;
+	display: flex;
+	flex-direction: column;
+	.pub-form-hd {
+		.title {
+			margin-bottom: 8px;
+			margin-top: 15px;
+			padding-left: 10px;
+			line-height: 20px;
+			border-left: 3px solid $primary-color;
+			text-align: left;
+			.commonBtn {
+				float: right;
+				margin-left: 15px;
+				background-color: $add-icon-color;
+				color: #fff;
+			}
+		}
+	}
+	.pub-form-bd {
+		margin-top: 5px;
+		background: #fff;
+		.pub-form-title {
+			text-align: left;
+			padding: 5px 10px;
+			font-weight: 600;
+			color: $title-color;
+		}
+		.pub-form-item {
+			margin: 3px 50px 3px 3px;
+			padding-top: 3px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			.pub-form-col {
+				position: relative;
+				margin: 5px;
+				display: flex;
+				.label {
+					display: flex;
+					flex-direction: row;
+					margin-right: 10px;
+					width: 120px;
+					min-height: 28px;
+					text-align: right;
+					justify-content: flex-end;
+					align-items: center;
+					color: $label-color;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				.content {
+					display: flex;
+					flex-grow: 1;
+					max-width: calc(100% - 130px);
+					.txt {
+						line-height: 28px;
+						color: $font-disable-color;
+						text-align: left;
+					}
+					.circle {
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						border-radius: 50%;
+						background-color: $primary-hover-color;
+						line-height: 20px;
+						text-align: center;
+						margin-left: 5px;
+						color: #fff;
+						cursor: pointer;
+						&.disabled {
+							background-color: #bbb;
+						}
+					}
+				}
+				.position-in {
+					position: absolute;
+					top: 5px;
+					right: -20px;
+					cursor: pointer;
+				}
+				&:nth-child(1), 
+				&:nth-child(3) {
+					flex: 1;
+				}
+				&:nth-child(2) {
+					width: 120px;
+				}
+			}
+			.pub-form-col-2 {
+				margin: 5px 0;
+				width: 50%;
+				display: flex;
+				.label {
+					display: flex;
+					flex-direction: row;
+					margin-right: 10px;
+					width: 120px;
+					min-height: 28px;
+					text-align: right;
+					justify-content: flex-end;
+					align-items: center;
+					color: $label-color;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				.content {
+					position: relative;
+					display: flex;
+					flex-grow: 1;
+					max-width: calc(100% - 130px);
+					.txt {
+						line-height: 28px;
+						color: $font-disable-color;
+						text-align: left;
+					}
+					.w100 {
+						width: 100%;
+						.select-trigger {
+							width: 100%;
+						}
+					}
+					.inline-box {
+						display: flex;
+						padding-top: 10px;
+						vertical-align: middle;
+					}
+					.errSpanMin {
+						display: none;
+						position: absolute;
+						top: 6px;
+						right: 2px;
+						font-size: 14px;
+						width: 14px;
+						height: 14px;
+						color: $check-color;
+					}
+					.el-input, .el-textarea, .el-checkbox, .el-select {
+						display: flex;
+						align-items: center;
+					}
+					.text {
+						display: flex;
+						align-items: center;
+						text-align: left;
+					}
+					.w50 {
+						width: 47%;
+					}
+					.label {
+						width: 50px;
+					}
+				}
+				.content-box {
+					justify-content: space-between;
+					flex: 1;
+					.left-content {
+						display: flex;
+						position: relative;
+						flex: 1;
+						min-width: 0;
+					}
+					.right-content {
+						position: relative;
+						width: 100px;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+					}
+					.right-content-icon {
+						flex-direction: row;
+						justify-content: space-between;
+					}
+				}
+				.content-vertical-box {
+					flex-direction: column;
+					text-align: left;
+					position: relative;
+					.w50 {
+						width: 47%;
+					}
+				}
+				&.w100 {
+					width: 100%;
+				}
+			}
+			.btn-box {
+				position: relative;
+				text-align: right;
+				margin: 10px 0;
+			}
+			.pub-form-icon {
+				font-size: 20px;
+				padding: 0 5px;
+				cursor: pointer;
+			}
+			.info-icon {
+				position: absolute;
+				right: -14px;
+    			top: -9px;
+			}
+			.remove-icon-color {
+				color: $remove-icon-color;
+			}
+			.add-icon-color {
+				color: $add-icon-color
+			}
+			.position {
+				position: absolute;
+				right: -80px;
+				top: 5px;
+			}
+			.pub-save-btn {
+				background-color: $add-icon-color;
+				color: #fff;
+			}
+			&.pub-form-border {
+				border-top: 1px dashed #ccc;
+			}
+			&:first-child {
+				border: 0 !important;
+			}
+		}
+		.pub-form-item-child {
+			width: 100%;
+			display: flex;
+			position: relative;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50px;
+				right: 0;
+				border-top: 1px dashed #ccc;
+			}
+			&.last::after {
+				content: '';
+					display: block;
+					position: absolute;
+					left: 50px;
+					right: 0;
+					bottom: 0;
+					border-top: 1px dashed #ccc;
+			}
+		}
+		
+	}
+	.el-button--primary {
+		background-color: $primary-color;
+		border-color: $primary-color;
+	}
+	.pub-form-fd {
+		padding: 10px;
+		background: #fcfcfc;
+		border-top: 1px solid #ccc;
+	}
+	.el-input--small {
+		.el-input__inner,
+		.el-input__icon{
+			height: 28px;
+			line-height: 28px;
+		}
+		&.danger input {
+			border-color: $check-color!important;
+		}
+	}
+	.el-radio-button--small .el-radio-button__inner {
+		padding: 7px 15px;
+	}
+	.el-divider--horizontal {
+		margin: 4px 0 4px 58px;
+		background: 0 0;
+		border-top: 1px dashed #ccc;
+	}
+}
+
+.pub-table-mod {
+	margin: 10px;
+	.pub-table-searchbox {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		& > div {
+			width: 200px;
+			margin: 10px;
+		}
+		.btn {
+			width: 80px;
+		}
+	}
+}
+.pub-form-civil {
+	.pub-form-col.w100 {
+		width: 100%
+	}
+}
+/*dialog*/
+.el-dialog__header {
+	text-align: left;
+	padding: 10px 20px!important;
+	background-color: #efefef;
+	.el-dialog__title {
+		font-size: 16px;
+	}
+	.el-dialog__headerbtn {
+		top: 12px;
+	}
+}
+.el-dialog__body {
+	padding: 10px!important;
+	.pub-form-mod {
+		margin: 0;
+		padding: 0;
+	}
+}
+.el-textarea__inner {
+	min-height: 28px !important;
+	line-height: 1.2 !important;
+}
+span.result {
+	background-color: #409EFF;
+	color: #fff;
+}
+.danger input ,.danger textarea {
+	border-color: $check-color!important;
+}

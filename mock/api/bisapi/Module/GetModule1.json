@@ -1,0 +1,854 @@
+
+{
+    "code": 200,
+    "msg": "请求成功",
+    "count": 4,
+    "data": [
+      {
+        "moduleId": "0101",
+        "moduleParentId": "0",
+        "moduleName": "基本信息",
+        "sort": 0,
+        "isReadonly": false,
+        "orderType": "8901",
+        "Columns": [
+          {
+            "id": 80,
+            "pId": 0,
+            "columnName": "报告类型",
+            "sort": 1,
+            "isHide": false,
+            "moduleId": "0101",
+            "Items": null
+          },
+          {
+            "id": 81,
+            "pId": 0,
+            "columnName": "客户简称",
+            "sort": 2,
+            "isHide": false,
+            "moduleId": "0101",
+            "Items": null
+          },
+          {
+            "id": 82,
+            "pId": 0,
+            "columnName": "备注",
+            "sort": 3,
+            "isHide": false,
+            "moduleId": "0101",
+            "Items": null
+          },
+          {
+            "id": 83,
+            "pId": 0,
+            "columnName": "特殊要求",
+            "sort": 4,
+            "isHide": false,
+            "moduleId": "0101",
+            "Items": null
+          },
+          {
+            "id": 84,
+            "pId": 0,
+            "columnName": "重复报告记录",
+            "sort": 5,
+            "isHide": false,
+            "moduleId": "0101",
+            "Items": null
+          }
+        ],
+        "Items": []
+      },
+      {
+        "moduleId": "1001",
+        "moduleParentId": "0",
+        "moduleName": "信息核实",
+        "sort": 1,
+        "isReadonly": false,
+        "orderType": "8901",
+        "Columns": [
+          {
+            "id": 65,
+            "pId": 0,
+            "columnName": "名称",
+            "sort": 1,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 66,
+            "pId": 0,
+            "columnName": "英文名称",
+            "sort": 2,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 67,
+            "pId": 0,
+            "columnName": "来源",
+            "sort": 3,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 68,
+            "pId": 0,
+            "columnName": "地址",
+            "sort": 4,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 69,
+            "pId": 0,
+            "columnName": "英文地址",
+            "sort": 5,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 70,
+            "pId": 0,
+            "columnName": "邮编",
+            "sort": 6,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 71,
+            "pId": 0,
+            "columnName": "网址",
+            "sort": 7,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 72,
+            "pId": 0,
+            "columnName": "Email",
+            "sort": 8,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 73,
+            "pId": 0,
+            "columnName": "联系人",
+            "sort": 9,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 74,
+            "pId": 0,
+            "columnName": "传真",
+            "sort": 10,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 75,
+            "pId": 0,
+            "columnName": "微博",
+            "sort": 11,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 76,
+            "pId": 0,
+            "columnName": "微信",
+            "sort": 12,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 77,
+            "pId": 0,
+            "columnName": "其他信息",
+            "sort": 13,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 78,
+            "pId": 0,
+            "columnName": "企业信息备注",
+            "sort": 14,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          },
+          {
+            "id": 79,
+            "pId": 0,
+            "columnName": "调查经过",
+            "sort": 15,
+            "isHide": false,
+            "moduleId": "1001",
+            "Items": null
+          }
+        ],
+        "Items": []
+      },
+      {
+        "moduleId": "1101",
+        "moduleParentId": "0",
+        "moduleName": "注册信息",
+        "sort": 6,
+        "isReadonly": false,
+        "orderType": "8901",
+        "Columns": [
+          {
+            "id": 35,
+            "pId": 0,
+            "columnName": "统一社会信用代码",
+            "sort": 1,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 36,
+            "pId": 0,
+            "columnName": "注册号",
+            "sort": 2,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 37,
+            "pId": 0,
+            "columnName": "名称",
+            "sort": 3,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 38,
+            "pId": 0,
+            "columnName": "法定代表人",
+            "sort": 4,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 39,
+            "pId": 0,
+            "columnName": "注册资本",
+            "sort": 5,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 40,
+            "pId": 0,
+            "columnName": "投资总额",
+            "sort": 6,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 41,
+            "pId": 0,
+            "columnName": "类型",
+            "sort": 7,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 42,
+            "pId": 0,
+            "columnName": "成立日期",
+            "sort": 8,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 43,
+            "pId": 0,
+            "columnName": "经营期限",
+            "sort": 9,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 44,
+            "pId": 0,
+            "columnName": "登记状态",
+            "sort": 10,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 45,
+            "pId": 0,
+            "columnName": "登记机关",
+            "sort": 11,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 46,
+            "pId": 0,
+            "columnName": "注册地址",
+            "sort": 12,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 47,
+            "pId": 0,
+            "columnName": "经营范围",
+            "sort": 13,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 48,
+            "pId": 0,
+            "columnName": "年度报告",
+            "sort": 14,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 49,
+            "pId": 0,
+            "columnName": "上级/业务主管单位",
+            "sort": 15,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 50,
+            "pId": 0,
+            "columnName": "组织结构代码",
+            "sort": 16,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          },
+          {
+            "id": 51,
+            "pId": 0,
+            "columnName": "备注",
+            "sort": 17,
+            "isHide": false,
+            "moduleId": "1101",
+            "Items": null
+          }
+        ],
+        "Items": []
+      },
+      {
+        "moduleId": "27",
+        "moduleParentId": "0",
+        "moduleName": "公共记录",
+        "sort": 9,
+        "isReadonly": false,
+        "orderType": "8901",
+        "Columns": [],
+        "Items": [
+          {
+            "moduleId": "2701",
+            "moduleParentId": "27",
+            "moduleName": "诉讼记录",
+            "sort": 1,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 2,
+                "pId": 0,
+                "columnName": "日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 3,
+                "pId": 0,
+                "columnName": "日期类型",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 4,
+                "pId": 0,
+                "columnName": "审理机关",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 5,
+                "pId": 0,
+                "columnName": "案由",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 6,
+                "pId": 0,
+                "columnName": "案件编号",
+                "sort": 5,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 7,
+                "pId": 0,
+                "columnName": "涉案金额",
+                "sort": 6,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 8,
+                "pId": 0,
+                "columnName": "见判决结果",
+                "sort": 7,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 9,
+                "pId": 0,
+                "columnName": "单位",
+                "sort": 8,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 10,
+                "pId": 0,
+                "columnName": "币种",
+                "sort": 9,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 11,
+                "pId": 0,
+                "columnName": "判决结果",
+                "sort": 10,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              },
+              {
+                "id": 12,
+                "pId": 0,
+                "columnName": "其他信息",
+                "sort": 11,
+                "isHide": false,
+                "moduleId": "2701",
+                "Items": null
+              }
+            ],
+            "Items": []
+          },
+          {
+            "moduleId": "2702",
+            "moduleParentId": "27",
+            "moduleName": "媒体记录",
+            "sort": 4,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 61,
+                "pId": 0,
+                "columnName": "发布日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 62,
+                "pId": 0,
+                "columnName": "信息来源",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 63,
+                "pId": 0,
+                "columnName": "摘要",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 64,
+                "pId": 0,
+                "columnName": "备注",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              }
+            ],
+            "Items": []
+          },
+          {
+            "moduleId": "2703",
+            "moduleParentId": "27",
+            "moduleName": "刑事诉讼记录",
+            "sort": 2,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 24,
+                "pId": 0,
+                "columnName": "日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 25,
+                "pId": 0,
+                "columnName": "日期类型",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 26,
+                "pId": 0,
+                "columnName": "审理机关",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 27,
+                "pId": 0,
+                "columnName": "案由",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 28,
+                "pId": 0,
+                "columnName": "案件编号",
+                "sort": 5,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 29,
+                "pId": 0,
+                "columnName": "涉案金额",
+                "sort": 6,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 30,
+                "pId": 0,
+                "columnName": "见判决结果",
+                "sort": 7,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 31,
+                "pId": 0,
+                "columnName": "单位",
+                "sort": 8,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 32,
+                "pId": 0,
+                "columnName": "币种",
+                "sort": 9,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 33,
+                "pId": 0,
+                "columnName": "判决结果",
+                "sort": 10,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              },
+              {
+                "id": 34,
+                "pId": 0,
+                "columnName": "其他信息",
+                "sort": 11,
+                "isHide": false,
+                "moduleId": "2703",
+                "Items": null
+              }
+            ],
+            "Items": []
+          },
+          {
+            "moduleId": "2704",
+            "moduleParentId": "27",
+            "moduleName": "负面记录",
+            "sort": 5,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 52,
+                "pId": 0,
+                "columnName": "发布日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 53,
+                "pId": 0,
+                "columnName": "信息来源",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 54,
+                "pId": 0,
+                "columnName": "摘要",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 55,
+                "pId": 0,
+                "columnName": "结果类型",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 56,
+                "pId": 0,
+                "columnName": "备注",
+                "sort": 5,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 57,
+                "pId": 0,
+                "columnName": "贿赂/腐败事件",
+                "sort": 6,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 58,
+                "pId": 0,
+                "columnName": "产品安全性事件",
+                "sort": 7,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 59,
+                "pId": 0,
+                "columnName": "保密性事件",
+                "sort": 8,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              },
+              {
+                "id": 60,
+                "pId": 0,
+                "columnName": "产品沟通事件",
+                "sort": 9,
+                "isHide": false,
+                "moduleId": "2704",
+                "Items": null
+              }
+            ],
+            "Items": []
+          },
+          {
+            "moduleId": "2705",
+            "moduleParentId": "27",
+            "moduleName": "破产记录",
+            "sort": 3,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 13,
+                "pId": 0,
+                "columnName": "日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 14,
+                "pId": 0,
+                "columnName": "日期类型",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 15,
+                "pId": 0,
+                "columnName": "审理机关",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 16,
+                "pId": 0,
+                "columnName": "案由",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 17,
+                "pId": 0,
+                "columnName": "案件编号",
+                "sort": 5,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 18,
+                "pId": 0,
+                "columnName": "涉案金额",
+                "sort": 6,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 19,
+                "pId": 0,
+                "columnName": "见判决结果",
+                "sort": 7,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 20,
+                "pId": 0,
+                "columnName": "单位",
+                "sort": 8,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 21,
+                "pId": 0,
+                "columnName": "币种",
+                "sort": 9,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 22,
+                "pId": 0,
+                "columnName": "判决结果",
+                "sort": 10,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              },
+              {
+                "id": 23,
+                "pId": 0,
+                "columnName": "其他信息",
+                "sort": 11,
+                "isHide": false,
+                "moduleId": "2705",
+                "Items": null
+              }
+            ],
+            "Items": []
+          }
+        ]
+      }
+    ]
+  }

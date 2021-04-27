@@ -1,0 +1,65 @@
+{
+    "code": 200,
+    "msg": "请求成功",
+    "count": 4,
+    "data": [
+      {
+        "moduleId": "27",
+        "moduleParentId": "0",
+        "moduleName": "公共记录",
+        "sort": 9,
+        "isReadonly": false,
+        "orderType": "8901",
+        "Columns": [],
+        "Items": [
+          {
+            "moduleId": "2702",
+            "moduleParentId": "27",
+            "moduleName": "媒体记录",
+            "sort": 4,
+            "isReadonly": false,
+            "orderType": "8901",
+            "Columns": [
+              {
+                "id": 61,
+                "pId": 0,
+                "columnName": "发布日期",
+                "sort": 1,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 62,
+                "pId": 0,
+                "columnName": "信息来源",
+                "sort": 2,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 63,
+                "pId": 0,
+                "columnName": "摘要",
+                "sort": 3,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              },
+              {
+                "id": 64,
+                "pId": 0,
+                "columnName": "备注",
+                "sort": 4,
+                "isHide": false,
+                "moduleId": "2702",
+                "Items": null
+              }
+            ],
+            "Items": []
+          }
+        ]
+      }
+    ]
+  }

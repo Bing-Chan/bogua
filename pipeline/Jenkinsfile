@@ -1,0 +1,101 @@
+#!/bin/bash -ilex
+
+pipeline {
+    agent any
+
+	environment {
+		//workflowgit user miller
+		workflowGitUser='a4230b88-835f-41e5-9bcf-3031e2ce54fa'
+		//workflow git 地址（不同项目需要修改）
+		workflowGitAddress='http://39.102.127.24:8100/project-infinity-net/fontend/br.reportfe.git'
+
+		ansibleHostHome="/etc/ansible"
+
+		tag="latest"
+		//容器端口映射关系（不同项目需要修改）
+		appPort= "7000"
+
+    appName= "webui"
+
+
+    }
+    parameters {
+       gitParameter branchFilter:'origin/(.*)', defaultValue: 'bau-docker', name: 'branch', type: 'PT_BRANCH',description: '请选择分支'
+       choice choices:['dev','uat'], description: '请选择环境', name: 'deployEnv'
+    }
+
+    stages {
+        stage('打印信息'){
+            steps {
+                echo env.WORKSPACE
+                echo params.branch
+                echo params.deployEnv
+				echo params.appName
+				echo env.ContainerValue
+				echo params.abc
+            }
+        }
+        stage('拉取git代码') {
+            steps {
+                script{
+                    echo '拉取git代码  开始'
+                    sh 'pwd'
+
+                    git credentialsId:env.workflowGitUser, branch:params.branch ,url:env.workflowGitAddress
+
+                    echo '拉取git代码 完成'
+                }
+            }
+        }
+
+		stage('构建镜像') {
+            steps {
+                echo '构建镜像  开始'
+
+                sh 'pwd'
+                sh 'cd $WORKSPACE && docker build -f ./docker/Dockerfile -t $appName:$branch . --network=host'
+
+                echo '构建镜像 完成'
+            }
+        }
+
+		stage('保存镜像') {
+            steps {
+                echo 'save镜像  开始'
+
+                sh 'cd $WORKSPACE && docker save  -o $appName-$branch.tar $appName:$branch'
+
+                echo 'save镜像 完成'
+            }
+        }
+
+
+
+		stage('部署新版本') {
+            steps {
+				script{
+					echo '部署新版本  开始'
+					sh 'cd $WORKSPACE &&  ansible-playbook -i "$ansibleHostHome/$deployEnv"  --extra-vars "workspace=$WORKSPACE SPRING_PROFILES_ACTIVE=$deployEnv APP_PORT=$appPort APP_IMAGE_NAME=$appName APP_IMAGE_TAG=$branch" ./pipeline/ansible.yml'
+				}
+
+            }
+        }
+
+		stage('清除临时镜像'){
+		    steps {
+                script{
+				     echo '清除临时镜像 开始'
+					 sh 'cd $WORKSPACE && docker image prune -f'
+				}
+  			}
+		}
+  }
+	post{
+		failure{
+			echo 'builder fail'
+		}
+		success{
+			echo 'builder success'
+		}
+	}
+}
